@@ -1,9 +1,9 @@
 import logging
-import sentry_sdk
 
+import sentry_sdk
 from sentry_sdk.integrations.logging import LoggingIntegration
 
-from app.settings.setting import get_settings, Environment
+from app.settings.setting import Environment, get_settings
 
 
 class LoggerManager:
