@@ -1,4 +1,4 @@
-from app.settings.setting import get_settings, Environment
+from app.settings.setting import Environment, get_settings
 
 
 class AppConfig:

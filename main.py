@@ -1,7 +1,7 @@
 from fastapi import FastAPI
+
 from app.routes.router import api_router
 from app.settings.app_config import AppConfig
-
 
 config = AppConfig()
 
