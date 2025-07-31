@@ -1,14 +1,5 @@
-
-
-
-
-
 from fastapi import APIRouter
-router = APIRouter()
-@router.post(
-    "/challenge",
-    summary="Execute a processing challenge",
-)
+from app.routes.challenge.controllers import controller
 
-def challenge_entrypoint(request):
-    pass
+router = APIRouter()
+router.include_router(controller.router, tags=["Challenge"])

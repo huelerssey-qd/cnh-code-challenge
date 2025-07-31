@@ -1,7 +1,5 @@
 from fastapi import APIRouter
-
-from app.routes.challenge.route import router as challenge_router
+from app.routes.challenge import route as challenge_route
 
 api_router = APIRouter()
-
-api_router.include_router(challenge_router, prefix="/api/v1", tags=["Challenge"])
+api_router.include_router(challenge_route.router)
